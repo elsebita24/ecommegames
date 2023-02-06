@@ -1,0 +1,33 @@
+.navBar {
+  background-color: #2a2a2a;
+  width: 100%;
+}
+
+.textoLogo {
+  color: antiquewhite;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.paddingIcons {
+  padding: 5px;
+}
+
+.iconoAgrandado {
+  font-size: 26px;
+}
+
+.boxBienvenida {
+  background-color: #f6ad55;
+  margin: auto;
+  width: 98%;
+  padding: 2.5rem;
+  margin-top: 0.2em;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
