@@ -19,15 +19,77 @@
 }
 
 .boxBienvenida {
-  background-color: #f6ad55;
+  background-color: #f806cc;
   margin: auto;
   width: 98%;
-  padding: 2.5rem;
+  padding: 0.1rem;
   margin-top: 0.2em;
   color: white;
   text-align: center;
   font-size: 1.5rem;
   border-radius: 10px !important;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 2.5rem;
+}
+
+.quantityProduct {
+  max-width: 200px;
+  border: solid 0.8px;
+  background-color: #c8cbcf;
+  padding: 8px 12px 8px 12px;
+  text-align: center;
+  border-color: #84878c;
+  border-radius: 8px;
+}
+
+.quantityProduct input {
+  font-size: 20px;
+  width: 80px;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  height: 35px;
+}
+
+.quantityProduct button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #434445;
+  height: 35px;
+  border-radius: 45px;
+}
+
+.cardProductos {
+  max-width: 350px;
+}
+
+.cardProductosImg {
+  max-height: 300px;
+  margin: auto;
+  padding: 0;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.cardContenedorInfo {
+  padding: 3px;
+  padding-top: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardProductDetail {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.imgItemDetail {
+  border-radius: 20px;
+}
+
+.titleProductDetail {
+  color: #5dcf06;
   font-weight: bold;
 }

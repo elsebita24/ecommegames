@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "title": "Mario Kart 8",
+    "description": "Es una versión ampliada de Mario Kart 8 para Wii U que contiene el juego completo junto con su contenido descargable y mayor definición de imagen. En esta edición para Nintendo Switch podrás jugar a Mario Kart en Alta Definición tanto en tu TV como en el modo portátil por primera vez en la saga.",
+    "stock": 2,
+    "price": "2.400",
+    "category": "Nintendo",
+    "pictureUrl": "https://i.ibb.co/6NZDk3g/mariokart.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Mario Oddissey",
+    "description": "El juego muestra a Mario viajando a través de varios mundos conocidos como «Reinos», en una nave con forma de sombrero llamada Odyssey. La Odyssey usa como combustible unos objetos con forma de lunas llamados energilunas, las cuales se reparten entre los 17 reinos y se obtienen al hacer ciertas acciones.",
+    "stock": 1,
+    "price": "2.400",
+    "category": "Nintendo",
+    "pictureUrl": "https://i.ibb.co/2j5dP0g/mariooddissey.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Pokemon Violet",
+    "description": "Pokémon Scarlet y Pokémon Violet serán los primeros RPG de mundo abierto de la saga Pokémon. Podrás seguir disfrutando de los clásicos de siempre, como descubrir Pokémon, entrenarlos, intercambiarlos, combatir y formar tu equipo con ellos, mientras te sumerges en esta enorme y nueva aventura.​",
+    "stock": 4,
+    "price": "2.400",
+    "category": "Nintendo",
+    "pictureUrl": "https://i.ibb.co/TrcgScq/pokemon.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Minecraft",
+    "description": "Minecraft es un videojuego tipo sandbox, su traducción literal sería “caja de arena” y es lo que representa la experiencia de juego. Los jugadores pueden modelar el mundo a su gusto, destruir y construir, como si estuviesen jugando en una caja de arena.",
+    "stock": 10,
+    "price": 760,
+    "category": "PC",
+    "pictureUrl": "https://i.ibb.co/yBPNWkd/minecraft.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Skyrim",
+    "description": "La historia de Skyrim se centra en los esfuerzos del personaje, Dovahkiin (sangre de dragón), para derrotar a Alduin, un dragón/dovah que, según la profecía, destruirá el mundo. La trama está fechada doscientos años después de los sucesos de Oblivion y tiene lugar en la provincia ficticia de Skyrim​.",
+    "stock": 2,
+    "price": 760,
+    "category": "PC",
+    "pictureUrl": "https://i.ibb.co/ZXYRfdf/skyrim.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Elden Ring ",
+    "description": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El videojuego surge de una colaboración entre el director y diseñador Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin.",
+    "stock": 20,
+    "price": "2.400",
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/5ndcwxG/elden.jpg"
+  },
+  {
+    "id": 7,
+    "title": "God Of War Ragnarok ",
+    "description": "God of War Ragnarök es un videojuego de acción y aventuras desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment (SIE). Se lanzó en todo el mundo el 9 de noviembre de 2022 para PlayStation 4 y PlayStation 5, lo que marca el primer lanzamiento entre generaciones de la serie.",
+    "stock": 3,
+    "price": "2.400",
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/ckt215H/godofwar.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Horizon Forbidden West ",
+    "description": "Sinopsis. El videojuego se desarrolla seis meses después de Zero Dawn y continua la historia de Aloy, una joven cazadora y guerrera de la tribu Nora que viaja al Oeste Prohibido para investigar una misteriosa y mortífera plaga que amenaza la vida en la Tierra",
+    "stock": 1,
+    "price": "2.400",
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/hBGfS7x/horizon.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Red Dead Redemption 2 ",
+    "description": "Red Dead Redemption 2 (estilizado como Red Dead Redemption II) es un videojuego de acción-aventura western desarrollado y publicado por Rockstar Games. Se estrenó el 26 de octubre de 2018 para las plataformas PlayStation 4 y Xbox One, el 5 de noviembre de 2019 para PC y el 19 de noviembre de ese mismo año para Google Stadia. Es la tercera entrega de la saga Red Dead y precuela del título de 2010 Red Dead Redemption.",
+    "stock": 15,
+    "price": "1.600",
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/VW5xLVN/reddeadredemption.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Spider-man Miles Morales ",
+    "description": "El adolescente Miles Morales se adapta a su nuevo barrio al tiempo que sigue los pasos de Peter Parker, su mentor, para convertirse en un nuevo Spider-Man. Cuando la lucha de poderes amenaza con destruir su hogar, Miles debe tomar el relevo de Spider-Man y estar a la altura.",
+    "stock": 6,
+    "price": "2.400",
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/nQzSPDZ/spiderman.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Uncharted 4 ",
+    "description": "El desenlace del ladrón, es un videojuego de acción-aventura en tercera persona, lanzado el 10 de mayo de 2016, distribuido por Sony Computer Entertainment y desarrollado por Naughty Dog exclusivamente para PlayStation 4",
+    "stock": 3,
+    "price": 800,
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/9tKQ06H/uncharted4.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Witcher 3 ",
+    "description": "The Witcher 3: Wild Hunt es un videojuego de rol desarrollado y publicado por la compañía polaca CD Projekt RED. Esta compañía es la desarrolladora mientras que la distribución corre a cargo de la Warner Bros. Interactive, en el caso de Norteamérica y Bandai Namco para Europa.",
+    "stock": 20,
+    "price": 560,
+    "category": "Playstation",
+    "pictureUrl": "https://i.ibb.co/KF8K58Y/witcher.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Forza Horizon 5",
+    "description": "Forza Horizon 5 es un videojuego de carreras multijugador en línea desarrollado por Playground Games y publicado por Xbox Game Studios. Es el quinto título de Forza Horizon y la duodécima entrega principal de la serie Forza. El juego está ambientado en una representación ficticia de México.",
+    "stock": 1,
+    "price": "2.400",
+    "category": "Xbox",
+    "pictureUrl": "https://i.ibb.co/VJGg2p0/forza.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Gears 5",
+    "description": "Gears 5 es un videojuego de acción en tercera persona desarrollado por The Coalition y publicado por Xbox Game Studios para Microsoft Windows y Xbox One. Es la sexta entrega de la saga Gears of War y la secuela directa de Gears of War 4. Fue lanzado el 10 de septiembre de 2019.",
+    "stock": 15,
+    "price": "2.400",
+    "category": "Xbox",
+    "pictureUrl": "https://i.ibb.co/TvdyYMh/gears.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Halo Infinite",
+    "description": "Halo Infinite es un videojuego de disparos en primera persona de la franquicia de videojuegos de ciencia ficción creada por Bungie Studios y actualmente desarrollada por 343 Industries. Es exclusivo para las plataformas Xbox One, Microsoft Windows y Xbox Series X|S.",
+    "stock": 1,
+    "price": "2.400",
+    "category": "Xbox",
+    "pictureUrl": "https://i.ibb.co/B6vPcxL/halo.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Donkey Kong (wii)",
+    "description": "Los clásicos Donkey Kong Country se reinventan en Donkey Kong Returns para Wii, un juego de plataformas en dos dimensiones de los de toda la vida, que utiliza el Wiimote para algunos usos imaginativos. Acompañados por Diddy Kong, tendremos que recorrer una isla dividida en ocho mundos, que abarcan sesenta niveles llenos de plataformas, barriles lanzadera y enemigos. Podemos elegir controlar el juego de dos formas, una usando solo el Wiimote, y otra acompañando éste con el nunchuk.",
+    "stock": 1,
+    "price": "1.800",
+    "category": "Retro",
+    "pictureUrl": "https://i.ibb.co/qxb7dGQ/donkeykong.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Mario Golf (gamecube)",
+    "description": "Juego. Como un típico juego de golf, el objetivo es golpear la bola para introducirla en cada uno de los hoyos del campo utilizando el menor número de golpes posible. Los jugadores pueden elegir entre una variedad de personajes y jugar en una gran variedad de campos dentro del universo Mario.",
+    "stock": 1,
+    "price": "1.800",
+    "category": "Retro",
+    "pictureUrl": "https://i.ibb.co/5RJ3Gf0/mariogolf.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Project Cars 2",
+    "description": "Project CARS 2 es la secuela del primer Project Cars, uno de los simuladores más ambiciosos de los últimos años en consola y PC. Esta nueva versión ofrece mejoras en los gráficos, los modos de juego y en las posibilidades online.",
+    "stock": 3,
+    "price": "1.200",
+    "category": "PC",
+    "pictureUrl": "https://i.ibb.co/F5PpJFD/projectcars2.png"
+  },
+  {
+    "id": 19,
+    "title": "Mario Sunshine (gamecube)",
+    "description": "Super Mario Sunshine (スーパーマリオサンシャイン Sūpā Mario Sanshain) es un videojuego de plataformas de 2002 desarrollado y publicado por Nintendo para la consola Nintendo GameCube. Es el segundo videojuego en 3D de la serie Super Mario desde el lanzamiento de Super Mario 64 (1996)",
+    "stock": 1,
+    "price": "1.800",
+    "category": "Retro",
+    "pictureUrl": "https://i.ibb.co/Fm9tcqq/mariosunshine.png"
+  }
+]

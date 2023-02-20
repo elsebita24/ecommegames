@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
 import data from "../data.json";
-import ItemList from "./ItemList";
+import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = () => {
-  const { category } = useParams();
+const ItemDetailContainer = () => {
+  const { id } = useParams();
 
   // #region ##HOOKS##
-  const [productos, setProductos] = useState([]);
+  const [producto, setProducto] = useState([]);
 
   useEffect(() => {
     fetchData();
-  }, [category]);
+  }, [id]);
   // #endregion ##HOOKS##
 
   // #region ##ALL FUNCTIONS##
 
   // #region Obtener datos del JSON y devolver promesa
-  const getData = () => {
+  const getData = async () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (data.length == 0) reject(new Error("No hay productos"));
@@ -31,11 +31,8 @@ const ItemListContainer = () => {
   const fetchData = async () => {
     try {
       const productosFetched = await getData();
-      const productosFiltered =
-        category !== undefined
-          ? productosFetched.filter((product) => product.category == category)
-          : productosFetched;
-      setProductos(productosFiltered);
+      const producto = productosFetched.filter((producto) => producto.id == id);
+      setProducto(producto);
     } catch (e) {
       console.error(e);
     }
@@ -46,10 +43,12 @@ const ItemListContainer = () => {
   // #region ##RETURN REACT##
   return (
     <>
-      <ItemList productos={productos} />
+      {producto.map((producto) => (
+        <ItemDetail key={producto.id} producto={producto} />
+      ))}
     </>
   );
   // #endregion ##RETURN REACT##
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;
