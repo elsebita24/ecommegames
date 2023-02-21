@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import data from "../data.json";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
   const { category } = useParams();
 
   // #region ##HOOKS##
   const [productos, setProductos] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchData();
@@ -29,6 +31,7 @@ const ItemListContainer = () => {
 
   // #region recibir datos y establecer el estado de la prop "productos" del componente ItemList
   const fetchData = async () => {
+    setLoading(true);
     try {
       const productosFetched = await getData();
       const productosFiltered =
@@ -39,16 +42,13 @@ const ItemListContainer = () => {
     } catch (e) {
       console.error(e);
     }
+    setLoading(false);
   };
   // #endregion
   // #endregion ##ALL FUNCTIONS##
 
   // #region ##RETURN REACT##
-  return (
-    <>
-      <ItemList productos={productos} />
-    </>
-  );
+  return <>{loading ? <Loading /> : <ItemList productos={productos} />}</>;
   // #endregion ##RETURN REACT##
 };
 

@@ -13,7 +13,6 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ producto }) => {
   const { title, description, pictureUrl, price, stock } = producto;
-
   return (
     <>
       <Card

@@ -26,6 +26,7 @@ const NavBar = () => {
               <h3 className="textoLogo">Ecommegames</h3>
             </Link>
           </Box>
+          <Spacer />
           <Box p="6">
             <Flex>
               {menus.map(({ nombre, icon }, index) => (

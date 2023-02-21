@@ -59,6 +59,10 @@ const ItemCount = ({ stockDisponible }) => {
 
   // #region Agregar Al Carrito
   const agregarAlCarrito = () => {
+    if (!cantidad) {
+      mostrarToast("Seleccione la cantidad.", "error");
+      return;
+    }
     mostrarToast("Próximamente agregar al carrito.", "success");
     reestablecerCantidad();
   };

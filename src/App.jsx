@@ -4,12 +4,14 @@ import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
 import NavBar from "./components/NavBar";
+import Bienvenido from "./components/Bienvenido";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+        <Bienvenido />
         <Routes>
           <Route exact path="/" element={<ItemListContainer />} />
           <Route

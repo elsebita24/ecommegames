@@ -169,5 +169,41 @@
     "price": "1.800",
     "category": "Retro",
     "pictureUrl": "https://i.ibb.co/Fm9tcqq/mariosunshine.png"
+  },
+  {
+    "id": 20,
+    "title": "Mario 3d World",
+    "description": "¡Araña y trepa a través de docenas de coloridos niveles! Multiplica la diversión al formar un equipo o compitiendo con tus amigos mediante el juego local* o en línea** para alcanzar el objetivo de cada etapa. ¡Trabajen juntos para explorar y descubrir los objetos coleccionables, o compitan por la corona obteniendo la puntuación más alta, creando así un frenesí amistoso! Mario y sus amigos pueden utilizar una variedad de mejoras, como la supercampana que otorga habilidades felinas como trepar y arañar. ¡Aplica las mejoras, completa los niveles y llévate la corona!",
+    "stock": 3,
+    "price": "2.400",
+    "category": "Nintendo",
+    "pictureUrl": "https://i.ibb.co/9tnVMcf/mario3dworld.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Hogwarts Legacy",
+    "description": "Hogwarts Legacy es un juego de rol inmersivo en mundo abierto que se inspira de los libros de la saga Harry Potter. Disfruta del Hogwarts del siglo XIX. Tu personaje es un alumno o alumna del famoso colegio que tiene la clave de un antiguo secreto que amenaza con destruir el mundo mágico. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. El legado está en tus manos.",
+    "stock": 1,
+    "price": "2.400",
+    "category": "Xbox",
+    "pictureUrl": "https://i.ibb.co/DPXycSw/hogwartslegacy.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Snow Runner",
+    "description": "SnowRunner te pone al volante de potentes vehículos para que conquistes entornos extremos con el mejor simulador de terreno que existe. Conduce 40 vehículos de marcas como Ford, Chevrolet y Freightliner, y deja tu huella en un mundo abierto y salvaje.",
+    "stock": 5,
+    "price": "760",
+    "category": "PC",
+    "pictureUrl": "https://i.ibb.co/T8GvgC7/snowrunner.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Zelda The Wind Waker",
+    "description": "The Legend of Zelda: The Wind Waker (ゼルダの伝説 風のタクト, Zeruda no Densetsu Kaze no Takuto ?) es la décima entrega de la saga de Zelda, título notable por su uso de la animación cel-shaded y la navegación por el mar. Fue lanzado para la Nintendo GameCube en Japón el 13 de diciembre de 2002, en Canadá y en los Estados Unidos el 24 de marzo de 2003, en Europa el 3 de mayo de 2003 y en Australia el 7 de mayo de 2003. La historia transcurre cientos de años después de The Legend of Zelda: Ocarina of Time. Posteriormente se lanzaría la secuela del juego, The Legend of Zelda: Phantom Hourglass para Nintendo DS, siendo una secuela directa de The Wind Waker.",
+    "stock": 1,
+    "price": "3000",
+    "category": "Retro",
+    "pictureUrl": "https://i.ibb.co/YtRRVqQ/zelda.jpg"
   }
 ]
