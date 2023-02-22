@@ -23,7 +23,7 @@ const NavBar = () => {
           </Box>
           <Box p="5" w="250px">
             <Link to={"/"}>
-              <h3 className="textoLogo">Ecommegames</h3>
+              <h3 className="textoLogo">Ecommegame</h3>
             </Link>
           </Box>
           <Spacer />
