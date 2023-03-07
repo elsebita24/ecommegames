@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import data from "../data.json";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -29,10 +29,17 @@ const ItemDetailContainer = () => {
   // #region Obtener datos del JSON y devolver promesa
   const getData = async () => {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (data.length == 0) reject(new Error("No hay productos"));
-        resolve(data);
-      }, 1000);
+      try {
+        const db = getFirestore();
+        const oneItem = doc(db, "Juegos", id); // lo ultimo es el id del producto
+        getDoc(oneItem).then((snapshot) => {
+          snapshot.exists()
+            ? resolve({ id: snapshot.id, ...snapshot.data() })
+            : reject(new Error("El producto no existe"));
+        });
+      } catch (e) {
+        reject(new Error("Ocurrió un error con firebase"));
+      }
     });
   };
   // #endregion
@@ -41,9 +48,8 @@ const ItemDetailContainer = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const productosFetched = await getData();
-      const producto = productosFetched.find((producto) => producto.id == id);
-      producto !== undefined && setProducto(producto);
+      const productoFetched = await getData();
+      productoFetched !== undefined && setProducto(productoFetched);
     } catch (e) {
       console.error(e);
     }

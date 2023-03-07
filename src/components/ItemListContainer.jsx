@@ -1,8 +1,14 @@
 import { useState, useEffect } from "react";
-import data from "../data.json";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  orderBy,
+} from "firebase/firestore";
 
 const ItemListContainer = () => {
   const { category } = useParams();
@@ -21,10 +27,22 @@ const ItemListContainer = () => {
   // #region Obtener datos del JSON y devolver promesa
   const getData = () => {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (data.length == 0) reject(new Error("No hay productos"));
-        resolve(data);
-      }, 1000);
+      try {
+        const db = getFirestore();
+        const itemsCollection = query(
+          collection(db, "Juegos"),
+          orderBy("category")
+        );
+        getDocs(itemsCollection).then((snapshot) => {
+          const docs = snapshot.docs.map((doc) => {
+            return { id: doc.id, ...doc.data() };
+          });
+
+          !docs.length ? reject(new Error("No hay productos")) : resolve(docs);
+        });
+      } catch (e) {
+        reject(new Error(e));
+      }
     });
   };
   // #endregion

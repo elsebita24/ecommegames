@@ -23,7 +23,7 @@ const Item = ({ producto }) => {
           <Stack mt="6" spacing="3" className="cardContenedorInfo">
             <Heading size="md">{title}</Heading>
             <Text color="blue.600" fontSize="2xl">
-              $ {price}
+              $ {Intl.NumberFormat("de-DE").format(price)}
             </Text>
           </Stack>
         </CardBody>
