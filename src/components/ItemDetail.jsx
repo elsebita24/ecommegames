@@ -12,7 +12,7 @@ import {
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ producto }) => {
-  const { title, description, pictureUrl, price, stock } = producto;
+  const { id, title, description, pictureUrl, price, stock } = producto;
   return (
     <>
       <Card
@@ -44,7 +44,13 @@ const ItemDetail = ({ producto }) => {
           </CardBody>
 
           <CardFooter>
-            <ItemCount stockDisponible={stock} />
+            <ItemCount
+              stockDisponible={stock}
+              id={id}
+              title={title}
+              price={price}
+              pictureUrl={pictureUrl}
+            />
           </CardFooter>
         </Stack>
       </Card>

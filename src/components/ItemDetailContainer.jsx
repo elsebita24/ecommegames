@@ -6,7 +6,6 @@ import Loading from "./Loading";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
-
   const defaultProduct = {
     title: "Product no encontrado",
     description:

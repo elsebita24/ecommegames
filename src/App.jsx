@@ -5,10 +5,11 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
 import NavBar from "./components/NavBar";
 import Bienvenido from "./components/Bienvenido";
+import ShoppingCartContext from "./context/ShoppingCartContext";
 
 const App = () => {
   return (
-    <>
+    <ShoppingCartContext>
       <BrowserRouter>
         <NavBar />
         <Bienvenido />
@@ -23,7 +24,7 @@ const App = () => {
           <Route exact path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </ShoppingCartContext>
   );
 };
 

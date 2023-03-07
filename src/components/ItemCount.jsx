@@ -8,9 +8,10 @@ import {
   useToast,
   HStack,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../context/ShoppingCartContext";
 
-const ItemCount = ({ stockDisponible }) => {
+const ItemCount = ({ stockDisponible, id, title, price }) => {
   // #region ##HOOKS##
   const [cantidad, setCantidad] = useState(0);
   const [stock, setStock] = useState(stockDisponible);
@@ -18,6 +19,7 @@ const ItemCount = ({ stockDisponible }) => {
   const [disabledAgregar, setDisabledAgregar] = useState(
     stockDisponible > 0 ? false : true
   );
+  const { cart, setCart } = useContext(CartContext);
   // #endregion ##HOOKS##
 
   // #region ##ALL FUNCTIONS##
@@ -49,22 +51,34 @@ const ItemCount = ({ stockDisponible }) => {
   // #endregion Restar Cantidad
 
   // #region Reestablecer Cantidad
-  const reestablecerCantidad = () => {
+  const reestablecer = () => {
     setCantidad(0);
-    setStock(stockDisponible);
-    setDisabledAgregar(false);
+    setStock(stock);
+    setDisabledAgregar(stock ? false : true);
     setDisabledRestar(true);
+    console.log(cart);
   };
   // #endregion Reestablecer Cantidad
 
   // #region Agregar Al Carrito
   const agregarAlCarrito = () => {
-    if (!cantidad) {
-      mostrarToast("Seleccione la cantidad.", "error");
-      return;
-    }
-    mostrarToast("Próximamente agregar al carrito.", "success");
-    reestablecerCantidad();
+    if (!cantidad) return mostrarToast("Seleccione la cantidad.", "error");
+
+    /**setCart((currItems) => {
+      const isItemFound = currItems.find((item) => item.id === id);
+      if (isItemFound) {
+        return currItems.map((item) => {
+          if (item.id === id) {
+            return { ...item, quantity: item.quantity + cantidad };
+          } else {
+            return item;
+          }
+        });
+      } else {
+        return [...currItems, { id, quantity: cantidad, price, title }];
+      }
+    }); ESTO ES DEL PROFESOR Y NO ME FUNCIONA CUANDO ES EL PRIMER ITEM, REVISAR Y CAMBIAR LA FORMA  */
+    reestablecer(stock - cantidad);
   };
   // #endregion Agregar Al Carrito
 

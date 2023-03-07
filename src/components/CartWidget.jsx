@@ -1,10 +1,12 @@
-import React from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/ShoppingCartContext";
 import { Box, Button, Badge } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
   let cantidadProductos = 12;
 
+  const { cart, setCart } = useContext(CartContext);
   return (
     <>
       <Box p="6">
