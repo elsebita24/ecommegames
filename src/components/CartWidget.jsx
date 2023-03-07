@@ -4,8 +4,6 @@ import { Box, Button, Badge } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-  let cantidadProductos = 12;
-
   const { cart, setCart } = useContext(CartContext);
   return (
     <>
@@ -21,7 +19,7 @@ const CartWidget = () => {
             >
               <i className="fa-sharp fa-solid fa-cart-shopping paddingIcons iconoAgrandado"></i>
               <Badge p="1" ml="1" colorScheme="twitter">
-                {cantidadProductos}
+                {cart.length}
               </Badge>
             </Button>
           </Link>
