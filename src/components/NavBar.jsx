@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "/src/assets/logoEcommegames.png";
 import { Box, Flex, Spacer, Button, Avatar } from "@chakra-ui/react";
 import CartWidget from "./CartWidget";

@@ -4,7 +4,7 @@ import { Box, Button, Badge } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-  const { cart, setCart } = useContext(CartContext);
+  const { cart } = useContext(CartContext);
   return (
     <>
       <Box p="6">

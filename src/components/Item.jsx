@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardBody,
@@ -11,9 +10,12 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Utils } from "../context/UtilsContext";
 
 const Item = ({ producto }) => {
   const { id, title, price, pictureUrl } = producto;
+  const { formatPrice } = useContext(Utils);
 
   return (
     <>
@@ -23,7 +25,7 @@ const Item = ({ producto }) => {
           <Stack mt="6" spacing="3" className="cardContenedorInfo">
             <Heading size="md">{title}</Heading>
             <Text color="blue.600" fontSize="2xl">
-              $ {Intl.NumberFormat("de-DE").format(price)}
+              $ {formatPrice(price)}
             </Text>
           </Stack>
         </CardBody>

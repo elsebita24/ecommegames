@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   Image,
@@ -10,9 +9,13 @@ import {
   Badge,
 } from "@chakra-ui/react";
 import ItemCount from "./ItemCount";
+import { useContext } from "react";
+import { Utils } from "../context/UtilsContext";
 
 const ItemDetail = ({ producto }) => {
   const { id, title, description, pictureUrl, price, stock } = producto;
+  const { formatPrice } = useContext(Utils);
+
   return (
     <>
       <Card
@@ -38,7 +41,7 @@ const ItemDetail = ({ producto }) => {
             <Text py="10">{description}</Text>
             <Badge colorScheme="green" variant="subtle">
               <Text color="blue.400" fontSize="4xl">
-                $ {price}
+                $ {formatPrice(price)}
               </Text>
             </Badge>
           </CardBody>

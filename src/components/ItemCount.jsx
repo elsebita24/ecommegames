@@ -5,11 +5,11 @@ import {
   Input,
   Spacer,
   Badge,
-  useToast,
   HStack,
 } from "@chakra-ui/react";
 import { useState, useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
+import { Utils } from "../context/UtilsContext";
 
 const ItemCount = ({ stockDisponible, id, title, price }) => {
   // #region ##HOOKS##
@@ -20,6 +20,7 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
     stockDisponible > 0 ? false : true
   );
   const { cart, setCart } = useContext(CartContext);
+  const { mostrarToast } = useContext(Utils);
   // #endregion ##HOOKS##
 
   // #region ##ALL FUNCTIONS##
@@ -56,7 +57,6 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
     setStock(stock);
     setDisabledAgregar(stock ? false : true);
     setDisabledRestar(true);
-    console.log(cart);
   };
   // #endregion Reestablecer Cantidad
 
@@ -81,19 +81,6 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
     reestablecer(stock - cantidad);
   };
   // #endregion Agregar Al Carrito
-
-  // #region Toast
-  const toast = useToast();
-  const mostrarToast = (mensaje, tipo) => {
-    toast({
-      title: mensaje,
-      position: "top",
-      duration: 5000,
-      isClosable: true,
-      status: tipo,
-    });
-  };
-  // #endregion Toast
 
   // #endregion ##ALL FUNCTIONS##
 

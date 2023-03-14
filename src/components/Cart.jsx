@@ -1,7 +1,11 @@
-import React from "react";
+import Order from "./Order";
 
 export const Cart = () => {
-  return <div>PROXIMAMENTE...</div>;
+  return (
+    <div>
+      <Order />
+    </div>
+  );
 };
 
 export default Cart;
