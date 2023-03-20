@@ -27,4 +27,10 @@
 
 ---
 
-## _PROXIMAMENTE MAS NOVEDADES..._
+### Ordenes de compra:
+
+##### Tus compras quedan almacenadas en firebase, luego de comprar te devolveremos un OrderId para que rastrees tu compra
+
+### Nuestra web demo:
+
+[Ingresa en nuestra web](https://ecommegames.netlify.app/)
