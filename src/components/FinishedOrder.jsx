@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { Image, Center, Box, Text } from "@chakra-ui/react";
+import { Image, Center, Box, Text, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const FinishedOrder = () => {
   const { orderId } = useParams();
@@ -20,6 +21,13 @@ const FinishedOrder = () => {
           <Text>Su número de orden es:</Text>
           <Text className="orderNumber">{orderId}</Text>
         </Box>
+      </Center>
+      <Center mt={5}>
+        <Link to={`/`}>
+          <Button colorScheme="orange" size="lg">
+            Seguir comprando
+          </Button>
+        </Link>
       </Center>
     </>
   );
