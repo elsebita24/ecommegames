@@ -19,7 +19,7 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
   const [disabledAgregar, setDisabledAgregar] = useState(
     stockDisponible > 0 ? false : true
   );
-  const { cart, setCart } = useContext(CartContext);
+  const { setCart } = useContext(CartContext);
   const { mostrarToast } = useContext(Utils);
   // #endregion ##HOOKS##
 
@@ -64,20 +64,19 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
   const agregarAlCarrito = () => {
     if (!cantidad) return mostrarToast("Seleccione la cantidad.", "error");
 
-    /**setCart((currItems) => {
-      const isItemFound = currItems.find((item) => item.id === id);
-      if (isItemFound) {
-        return currItems.map((item) => {
-          if (item.id === id) {
-            return { ...item, quantity: item.quantity + cantidad };
-          } else {
-            return item;
-          }
-        });
-      } else {
-        return [...currItems, { id, quantity: cantidad, price, title }];
-      }
-    }); ESTO ES DEL PROFESOR Y NO ME FUNCIONA CUANDO ES EL PRIMER ITEM, REVISAR Y CAMBIAR LA FORMA  */
+    setCart((carritoActual) => {
+      const elementoEnCarrito = carritoActual.find(
+        (product) => product.id === id
+      );
+      return elementoEnCarrito
+        ? carritoActual.map((product) =>
+            product.id === id
+              ? { ...product, quantity: product.quantity + cantidad }
+              : product
+          )
+        : [...carritoActual, { id, quantity: cantidad, price, title }];
+    });
+
     reestablecer(stock - cantidad);
   };
   // #endregion Agregar Al Carrito
