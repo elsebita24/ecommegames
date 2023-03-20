@@ -39,7 +39,7 @@ const FormOrder = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+
     if (!order.name || !order.telefono || !order.email)
       return mostrarToast(
         "Debe completar todos los campos para finalizar la compra",
@@ -52,6 +52,7 @@ const FormOrder = () => {
     if (!controlEmail(order.email))
       return mostrarToast("Email incorrecto", "error");
 
+    setLoading(true);
     try {
       const db = getFirestore();
       const ordersCollection = collection(db, "Orden");
