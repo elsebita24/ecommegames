@@ -93,3 +93,77 @@
   color: #5dcf06;
   font-weight: bold;
 }
+
+.textCarritoVacio {
+  font-size: 50px;
+  padding: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+.cartProductos {
+  max-width: 1200px;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  border: solid 2px;
+  border-color: #5974f0;
+  background-color: #c1cbf7;
+  margin-top: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+.cartProductosImg {
+  max-width: 90px;
+  margin: auto;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.cartTitleProducto {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carTotal {
+  background-color: #03ad09;
+  margin: auto;
+  width: auto;
+  padding: 0.8rem;
+  margin-top: 0.3em;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 4px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.cartFormOrder {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.imgCongratulations {
+  max-width: 500px;
+}
+
+.boxCongratulations {
+  text-align: center;
+  font-size: 3em;
+  border: solid 2px;
+  padding: 10px;
+  border-radius: 15px;
+  color: #812afa;
+  background-color: #e1fcdc;
+  border-color: #2bf702;
+}
+
+.orderNumber {
+  color: #ff1c51;
+  font-weight: bold;
+}

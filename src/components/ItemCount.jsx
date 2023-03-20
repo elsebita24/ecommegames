@@ -11,7 +11,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
 import { Utils } from "../context/UtilsContext";
 
-const ItemCount = ({ stockDisponible, id, title, price }) => {
+const ItemCount = ({ stockDisponible, id, title, price, pictureUrl }) => {
   // #region ##HOOKS##
   const [cantidad, setCantidad] = useState(0);
   const [stock, setStock] = useState(stockDisponible);
@@ -74,9 +74,12 @@ const ItemCount = ({ stockDisponible, id, title, price }) => {
               ? { ...product, quantity: product.quantity + cantidad }
               : product
           )
-        : [...carritoActual, { id, quantity: cantidad, price, title }];
+        : [
+            ...carritoActual,
+            { id, quantity: cantidad, price, title, pictureUrl },
+          ];
     });
-
+    mostrarToast("Producto agregado al carrito", "success");
     reestablecer(stock - cantidad);
   };
   // #endregion Agregar Al Carrito

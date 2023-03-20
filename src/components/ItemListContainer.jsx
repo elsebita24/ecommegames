@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
@@ -9,13 +9,14 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
+import { Utils } from "../context/UtilsContext";
 
 const ItemListContainer = () => {
   const { category } = useParams();
 
   // #region ##HOOKS##
   const [productos, setProductos] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const { loading, setLoading } = useContext(Utils);
 
   useEffect(() => {
     fetchData();

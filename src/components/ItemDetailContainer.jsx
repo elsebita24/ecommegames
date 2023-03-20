@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { Utils } from "../context/UtilsContext";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ const ItemDetailContainer = () => {
 
   // #region ##HOOKS##
   const [producto, setProducto] = useState(defaultProduct);
-  const [loading, setLoading] = useState(false);
+  const { loading, setLoading } = useContext(Utils);
 
   useEffect(() => {
     fetchData();

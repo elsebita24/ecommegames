@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Bienvenido from "./components/Bienvenido";
 import ShoppingCartContext from "./context/ShoppingCartContext";
 import UtilsContext from "./context/UtilsContext";
+import FinishedOrder from "./components/FinishedOrder";
 
 const App = () => {
   return (
@@ -23,6 +24,11 @@ const App = () => {
             />
             <Route exact path="/item/:id" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<Cart />} />
+            <Route
+              exact
+              path="/finishedOrder/:orderId"
+              element={<FinishedOrder />}
+            />
           </Routes>
         </BrowserRouter>
       </ShoppingCartContext>

@@ -1,14 +1,12 @@
 import Order from "./Order";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
+import EmptyCart from "./EmptyCart";
 
 export const Cart = () => {
-  const { cart, setCart } = useContext(CartContext);
-  return (
-    <div>
-      <Order />
-    </div>
-  );
+  const { cart } = useContext(CartContext);
+
+  return <>{cart.length ? <Order /> : <EmptyCart />}</>;
 };
 
 export default Cart;
